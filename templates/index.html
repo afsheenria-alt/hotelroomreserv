@@ -5,9 +5,34 @@
 </head>
 <body>
 
-    <h1>Welcome to Hotel Room Reservation</h1>
+<h1>Hotel Room Reservation</h1>
 
-    <p>Book your room with us!</p>
+<form action="/reserve" method="POST">
+
+    Guest Name:
+    <input type="text" name="guest_name" required>
+    <br><br>
+
+    Email ID:
+    <input type="email" name="email" required>
+    <br><br>
+
+    Check-in Date:
+    <input type="date" name="checkin" required>
+    <br><br>
+
+    Room Type:
+    <select name="room_type">
+        <option>Single</option>
+        <option>Double</option>
+        <option>Deluxe</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Book Now</button>
+
+</form>
 
 </body>
 </html>
